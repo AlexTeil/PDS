@@ -31,9 +31,16 @@ sum_vec <- function(x, y) {
 sum_vec(x,y)
 
 # 3. Skriv en funktion, som tager en vektor som argument, og som beregner standardafvigelsen hvis n > 30, og ellers printer "N er under 30!" og afbryder (hint: `break`). Test med vektorerne `x`, `y`, `z` ovenfor.  
-sd_vec(x) <- function {
-  
+sd_vec <- function(x){
+  if(n<30){
+    sd(x)
+  }  else{
+  print("N er under 30!")
+    break
+  }
 }
+
+sd_vec(x)
 
 # 4. Skriv et for-loop, som looper igennem alle kolonnerne i dataframen `seats` og beregner partiernes gennemsnitlige antal mandater
 
